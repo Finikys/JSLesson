@@ -52,3 +52,57 @@ console.log("Math: " + Math.PI); // Число пи
 console.log("Math: " + Math.E); // Число E
 console.log("Math: " + Math.min(1234,2134,42135,2,423521,55,45314513,53534)); // Наименьшее значение
 console.log("Math: " + Math.max(452345,6256,46246,62562,624562,4526)); // Наибольшее значение
+
+
+
+
+
+// ДЕнь 2 ----------------------------------------------------------------------------------
+// Условные констукции 
+
+var number = 15;
+var number_2 = "142";
+var isHasHouse = true;
+
+if(number != 15) {
+    console.log("Условия выполнены 1"); // если
+} else { 
+    console.error("Условия не выполнены: 'number != 15'"); // в любом другом случае
+}
+
+if(number_2 == "14") {
+    console.log("Условия выполнены");
+} else if(number > 10) {
+    console.log("Условия выполнены: 'number > 10'"); // else if = elif
+} else { 
+    console.error("Условия не выполнены"); // в любом другом случае
+}
+
+// isHasHouse = isHasHouse == true
+// !isHasHouse = isHasHouse == false
+
+if(number == 5 || isHasHouse) {
+    console.log("Одно из условий выполнено"); // выполнение одного из условий or = || 
+}
+
+if(number == 15 && isHasHouse) {
+    console.log("Все условия выполнены"); // все условия выполнены and = &&
+}
+
+
+
+var stroke = "word";
+
+switch(stroke) { // проверить переменную на множество значений 
+    case "4":
+        console.log("Переменная со значением 4");
+        break;
+    case "45":
+        console.log("Переменная со значеничем 45")
+        break;
+    case "word":
+        console.log("Переменная со значеничем word");
+        break;
+    default:
+        console.error("error"); // В default не нужно ставить break 
+}
